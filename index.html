@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>MGMT</title>
+</head>
+
+
+<!--Background image -->
+<style>
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("img/mediamain.jpg");
+    min-height: 75%;
+  }
+</style>
+
+
+
+<body class="bgimg">
+
+  <!-- mgmt logo -->
+  <div class="center">
+    <img src="img/white_logo.png" style="width:30%;">
+
+
+    <!-- Hamburger menu -->
+    <nav>
+      <span onclick="openNav()">
+        <div class="hamburgerBun">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
+      </span>
+    </nav>
+
+
+    <!-- The navigation overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content" onlick="openNav()">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="discography.html">DISCOGRAPHY</a>
+        <a href="merchandise.html">MERCHANDISE</a>
+        <a href="tour.html">TOUR</a>
+        <a href="media.html">MEDIA</a>
+      </div>
+
+    </div>
+
+
+
+    <script>
+      /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+
+
+
+</body>
+</html>

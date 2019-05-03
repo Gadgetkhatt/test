@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>About</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #3c3c3c;
+    }
+
+    .container {
+      position: relative;
+      top: 100px;
+      font-size: 16px;
+    }
+
+    .About {
+      position: relative;
+      top: 100px;
+      left: 5%;
+    }
+    .Details {
+      position: relative;
+      top: 80px;
+      left: 1%;
+    }
+
+    h2 {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hamburger menu -->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+    <span onclick="openNav()">
+      <div class="hamburgerBun">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </span>
+
+
+
+  <!--about-->
+  <div class="About">
+    <h1 style="color:#FAEBD7; font-size: 50px;"> ABOUT </h1>
+  </div>
+
+  <!-- GRIDS -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>MGMT is an American rock band formed in 2002 in Middletown, Connecticut. It was founded by multi-instrumentalists Andrew VanWyngarden and Ben Goldwasser. Along side VanWyngarden and Goldwasser MGMT's live lineup currently consists of
+          drummer Will Berman, bassist Simon O'Connor, and guitarist and keyboard James Richardson.</p>
+
+        <p>Originally signed to Cantora Records by the nascent label's co-founder, NYU undergrad Will Griggs, MGMT later signed
+          with Columbia and RED Ink in 2006 and released their debut album Oracular Spectacular the next year. After the
+          release of Oracular Spectacular Asti, Richardson and Berman joined the core band in the studio for Congratulations, which
+          was released on April 13, 2010. In January 2011 they began work on their eponymous third studio album. It was released
+          on September 17, 2013, and was released as an early exclusive on Rdio on September 9, 2013. The group's fourth studio
+          album, titled Little Dark Age, was released in February 2018.</p>
+        <br />
+
+        <div class="col-md-6">
+
+          <ul class="list-unstyled">
+            <h2> Band Members </h2>
+            <li>Andrew VanWyngarden</li>
+            <li>Benjamin Goldwasser</li>
+            <li>James Richardson</li>
+            <li>Simon O'Connor</li>
+            <li>Will Berman</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h2> Collaborations </h2>
+          <ul class="list-unstyled">
+            <li>Kid Cudi</li>
+            <li>Devendra Banhart</li>
+            <li>Andrew Stockdale of Wolfmother</li>
+            <li>Binki Shapiro of Little Joy</li>
+            <li>Lou Reed</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="col-md-6 ">
+          <img src="./img/about_pics.jpg">
+        </div>
+      </div>
+
+
+      <!-- The navigation overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" onlick="openNav()">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="discography.html">DISCOGRAPHY</a>
+          <a href="merchandise.html">MERCHANDISE</a>
+          <a href="tour.html">TOUR</a>
+          <a href="media.html">MEDIA</a>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+          /* Open */
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
+
+          /* Close */
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+        </script>
+</body>
+
+</html>
