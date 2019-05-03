@@ -1,0 +1,162 @@
+/* hamburger style */
+.hamburgerBun {
+  position:fixed;
+  left: 50%;
+  top: 60px;
+}
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.center {
+  padding: 20% 0;
+  text-align: center;
+}
+
+
+/* body color */
+body {
+  background-color: grey
+  ;
+}
+
+
+/* paragraph text color */
+p {
+  color: white;
+  font-family: sans-serif;
+}
+
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+li{
+  color: white;
+  font-size: 17px;
+}
+
+.disco{
+  margin:10px 50px;
+}
+.disco img{
+  transition: 1s;
+  padding:15px;
+}
+
+.disco img:hover{
+  filter:grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+
+.merch{
+  margin:0px 0px;
+}
+.merch img{
+  transition: 1s;
+  padding:15px;
+}
+
+.merch img:hover{
+  filter:grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+
+
+/*links*/
+a:link {
+  color: #FF00FF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-y: hidden; /* Disable vertical scroll, except for small screens */
+  transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 10%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: sans-serif;
+  color: #FF00FF;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 47%;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
